@@ -1,0 +1,6 @@
+Użycie "copilot" w wyszukiwarce bing.com do zebrania informacji o module monitoringu mediów w Prowly
+
+Given the user has performed a search for "Prowly Media Monitoring module"
+When the user selects the "Copilot" category
+Then the search results should provide relevant information about Prowly's Media Monitoring module from Bing AI assistant
+And start conversation with user

@@ -1,0 +1,22 @@
+Filtrowanie według kategoi "News"
+
+Scenario: Filter search results by the "News" category for "Prowly Media Monitoring"
+Given the user has performed a search for "Prowly Media Monitoring"
+When the user selects the "News" category
+Then the search results should only include news related to "Prowly Media Monitoring"
+And there should be no results outside the "News" category
+
+Filtrowanie według kategoi "Video"
+
+Scenario: Filter search results by the "Video" category for "Prowly Media Monitoring"
+Given the user has performed a search for "Prowly Media Monitoring"
+When the user selects the "Video" category
+Then the search results should only include videos related to "Prowly Media Monitoring"
+And there should be no results outside the "Video" category
+
+Filtrowanie bez kategorii
+
+Scenario: Perform a basic search for "Prowly Media Monitoring"
+Given the user has performed a search for "Prowly Media Monitoring"
+When the user enters the phrase "Prowly Media Monitoring" into the search bar
+Then the search results should include an exact match for the entered phrase
